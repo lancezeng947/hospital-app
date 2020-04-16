@@ -19,6 +19,7 @@
 -- Table structure for table `BIOLIFE`
 --
 
+
 DROP TABLE IF EXISTS `BIOLIFE`;
 CREATE TABLE `BIOLIFE` (
   `Species_No` int(11) NOT NULL,
