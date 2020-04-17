@@ -19,6 +19,7 @@
 -- Table structure for table `BIOLIFE`
 --
 
+
 DROP TABLE IF EXISTS `BIOLIFE`;
 CREATE TABLE `BIOLIFE` (
   `Species_No` int(11) NOT NULL,
@@ -71,7 +72,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `DEST`;
 CREATE TABLE `DEST` (
-  `Destination_No` int(11) NOT NULL,
+  `Destination_No` int(11) NOT NULL AUTO_INCREMENT,
   `Destination_Name` varchar(255) default NULL,
   `Avg_Temp_F` double default NULL,
   `Avg_Temp_C` double default NULL,
@@ -165,7 +166,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `DIVEORDS`;
 CREATE TABLE `DIVEORDS` (
-  `Order_No` int(11) NOT NULL,
+  `Order_No` int(11) NOT NULL AUTO_INCREMENT,
   `Customer_No` int(11) default NULL,
   `Sale_Date` datetime default NULL,
   `Ship_Via` varchar(255) default NULL,
