@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS hospital;
+
 USE hospital;
 
 DROP TABLE IF EXISTS insurance;
