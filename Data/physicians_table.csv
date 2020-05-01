@@ -1,4 +1,4 @@
-id,hospital_id,last_name,first_name,email,department
+id,hospital_id,last_name,first_name,email,specialty
 1,1,ENKESHAFI,ARDALAN,naronsohn0@about.me,Internal Medicine
 2,2,CIBULL,THOMAS,hannand1@icio.us,Pathology
 3,3,KHALIL,RASHID,hjanodet2@washingtonpost.com,Anesthesiology
@@ -78,7 +78,7 @@ id,hospital_id,last_name,first_name,email,department
 77,77,AL-SAAB,SAAD,fhillburn24@blogspot.com,Cardiovascular Disease (Cardiology)
 78,78,DURHAM,BENJAMIN,mforgie25@newsvine.com,Physician Assistant
 79,79,GAMBOA,STEPHEN,xreap26@toplist.cz,Emergency Medicine
-80,80,QUEZADA JOAQUIN,NESTOR,channam27@goo.gl,Internal Medicine
+80,80,QUEZADA JOAQUIN,NESTOR,channam27@goo.gl,Dental
 81,81,MILLER,LAURA,elubeck28@apple.com,Neurology
 82,82,BENEZRA,KAREN,cdenk29@un.org,Osteopathic Manipulative Medicine
 83,83,JEGEDE,OLUGBEMIGA,jbalentyne2a@e-recht24.de,Internal Medicine
@@ -86,7 +86,7 @@ id,hospital_id,last_name,first_name,email,department
 85,85,MAREEDU,JYOTSNA,tformigli2c@edublogs.org,Internal Medicine
 86,86,NASAJPOUR,HOSSEIN,lgatrill2d@cam.ac.uk,Plastic and Reconstructive Surgery
 87,87,RULE,CINDI,mdunnett2e@imgur.com,Nurse Practitioner
-88,88,HASAN,SABA,shandy2f@npr.org,Diagnostic Radiology
+88,88,HASAN,SABA,shandy2f@npr.org,Dental
 89,89,HOMAN,ZENA,bdixon2g@shop-pro.jp,Obstetrics & Gynecology
 90,90,GVOZDJAN,DRAGOSLAV,hbastiman2h@tmall.com,Psychiatry
 91,91,GAMBACORTA,KATHERINE,rreddel2i@usgs.gov,Anesthesiology
@@ -110,7 +110,7 @@ id,hospital_id,last_name,first_name,email,department
 109,9,SMERKA,KENNETH,bbradder30@cargocollective.com,Physician Assistant
 110,10,GUPTA,ARUSHA,soffner31@ucsd.edu,Ophthalmology
 111,11,SOWAH,LEONARD,mklimecki32@ask.com,Internal Medicine
-112,12,TAVAN,EMMANUEL,rcastana33@archive.org,Pulmonary Disease
+112,12,TAVAN,EMMANUEL,rcastana33@archive.org,Dental
 113,13,KRAMER,OLGA,lleal34@gov.uk,Physician Assistant
 114,14,BERNAL,JUAN,ieasseby35@tinypic.com,Interventional Cardiology
 115,15,HOUSE,ROBIN,jmacrory36@amazon.co.jp,Nurse Practitioner
@@ -126,7 +126,7 @@ id,hospital_id,last_name,first_name,email,department
 125,25,ZABIEREK,JENNILLE,ddonan3g@rediff.com,Physical Therapist in Private Practice
 126,26,MOHLER,TROY,cnutbeem3h@wsj.com,Family Practice
 127,27,SPRAGG,CHERYL,adesporte3i@tuttocitta.it,Physician Assistant
-128,28,MILLER,ADRIANNE,stulleth3j@wikimedia.org,Audiologist
+128,28,MILLER,ADRIANNE,stulleth3j@wikimedia.org,Dental
 129,29,SOLBERG-SHANKLE,HEIDI,tedelston3k@wordpress.org,Emergency Medicine
 130,30,BREWER,DEBRA,dsalliere3l@buzzfeed.com,Audiologist
 131,31,KODUMURI,VAMSI,gsnow3m@ycombinator.com,Cardiovascular Disease (Cardiology)
@@ -141,7 +141,7 @@ id,hospital_id,last_name,first_name,email,department
 140,40,TEAGUE,MICHELLE,lwornum3v@msu.edu,Physical Therapist in Private Practice
 141,41,GELMANN,MARY COLEEN,bbramwich3w@prnewswire.com,Certified Registered Nurse Anesthetist (CRNA)
 142,42,VANDONGEN,DANIQUE,lhaslocke3x@parallels.com,Physical Medicine and Rehabilitation
-143,43,ALBERT,WILLIAM,ceymer3y@homestead.com,Chiropractic
+143,43,ALBERT,WILLIAM,ceymer3y@homestead.com,Dental
 144,44,EGAR,JOHN,cjannequin3z@ibm.com,Internal Medicine
 145,45,USOROV,ALEKSANDR,gstanaway40@unc.edu,Nephrology
 146,46,ANDERSON,ROBERT,sgadney41@xinhuanet.com,Certified Registered Nurse Anesthetist (CRNA)
@@ -156,7 +156,7 @@ id,hospital_id,last_name,first_name,email,department
 155,55,CHOW,LING,dackland4a@webeden.co.uk,Internal Medicine
 156,56,DEFILIPPIS,NICHOLAS,lminton4b@nature.com,Anesthesiology
 157,57,PERRI,ANTHONY,hmuddimer4c@bloomberg.com,Dermatology
-158,58,BRINDLEY,MACE,fupwood4d@alibaba.com,Otolaryngology
+158,58,BRINDLEY,MACE,fupwood4d@alibaba.com,Dental
 159,59,SHAD,FARIHA,pbasezzi4e@bravesites.com,Internal Medicine
 160,60,CRONIN,JERI,eraftery4f@cdbaby.com,Nurse Practitioner
 161,61,BIERDEN,REBECCA,mbulger4g@samsung.com,Physical Medicine and Rehabilitation
@@ -168,7 +168,7 @@ id,hospital_id,last_name,first_name,email,department
 167,67,KOSHY,ANOOPA,acalliss4m@java.com,Endocrinology
 168,68,ARTHUR,KRISTINE,dabley4n@deliciousdays.com,Internal Medicine
 169,69,LEI,LAURA,iokelly4o@liveinternet.ru,Anesthesiology
-170,70,STANDHART,PHILIP,jbrunelleschi4p@blinklist.com,Physical Therapist in Private Practice
+170,70,STANDHART,PHILIP,jbrunelleschi4p@blinklist.com,Dental
 171,71,BAJAJ,BHAVANDEEP,celleton4q@weebly.com,Internal Medicine
 172,72,JIMENEZ,LINCOLN,dchillcot4r@ucsd.edu,Neurosurgery
 173,73,AMIN,KHALID,jmyton4s@icio.us,Pathology
@@ -180,7 +180,7 @@ id,hospital_id,last_name,first_name,email,department
 179,79,BLOMEIER,HERMAN,dpeel4y@wisc.edu,Endocrinology
 180,80,SNIADANKO,MARK,pdabling4z@google.pl,Emergency Medicine
 181,81,MORRIS,MELANIE,panthonsen50@craigslist.org,General Surgery
-182,82,SPIRA,ETAN,nbroxis51@nydailynews.com,Gastroenterology
+182,82,SPIRA,ETAN,nbroxis51@nydailynews.com,Dental
 183,83,CHONG,NYEN,sprahl52@sciencedaily.com,Thoracic Surgery
 184,84,HURLEY,PATRICK,bwharmby53@indiegogo.com,Diagnostic Radiology
 185,85,JUNG,EDWARD,fsey54@dailymotion.com,Radiation Oncology
@@ -189,7 +189,7 @@ id,hospital_id,last_name,first_name,email,department
 188,88,SCARFO,KEITH-AUSTIN,jtreamayne57@hatena.ne.jp,Anesthesiology
 189,89,CUDZILO,COREY,edemead58@ameblo.jp,Pulmonary Disease
 190,90,NWAOGWUGWU,UZOAMAKA,swaeland59@acquirethisname.com,Internal Medicine
-191,91,NUNES,WENDY,vsegot5a@sogou.com,Urology
+191,91,NUNES,WENDY,vsegot5a@sogou.com,Dental
 192,92,REUTTER,MARK,mvannoort5b@tinypic.com,Emergency Medicine
 193,93,GAMBLE,DARCESEAN,rizkovici5c@aboutads.info,Physician Assistant
 194,94,SPADER,HEATHER,mkellart5d@bluehost.com,Neurosurgery
@@ -228,7 +228,7 @@ id,hospital_id,last_name,first_name,email,department
 227,27,OSLEBER,MICHAEL,mkarpets6a@vinaora.com,Dermatology
 228,28,RATCHFORD,ERIK,afreckingham6b@blogspot.com,Urology
 229,29,KAN,JACK,sepps6c@google.com.br,Anesthesiology
-230,30,BLOCK,JOANNE,mstleger6d@miitbeian.gov.cn,Licensed Clinical Social Worker
+230,30,BLOCK,JOANNE,mstleger6d@miitbeian.gov.cn,Dental
 231,31,BOEHMLER,JESSICA,amunt6e@mail.ru,Pulmonary Disease
 232,32,CIOFFI,GEORGE,balway6f@nifty.com,Ophthalmology
 233,33,LADANYE,KAREN,cupton6g@de.vu,Psychologist Clinical
@@ -240,7 +240,7 @@ id,hospital_id,last_name,first_name,email,department
 239,39,KRETCHMAN,ERICA,hjura6m@prlog.org,Endocrinology
 240,40,WANG,ROBERTA,cbuddles6n@nih.gov,Physical Medicine and Rehabilitation
 241,41,FIELDS,JUSTIN,crome6o@rakuten.co.jp,Internal Medicine
-242,42,PHUNG,ANDY,srosingdall6p@mashable.com,Family Practice
+242,42,PHUNG,ANDY,srosingdall6p@mashable.com,Dental
 243,43,BAILEY,NATHANAEL,bludman6q@furl.net,Pathology
 244,44,BURMAN,ROBERT,ltuer6r@nifty.com,Diagnostic Radiology
 245,45,SAWYER,KEVIN,zhubach6s@huffingtonpost.com,Diagnostic Radiology

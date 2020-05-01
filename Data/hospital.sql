@@ -5,13 +5,12 @@ USE hospital;
 DROP TABLE IF EXISTS insurance;
 CREATE TABLE insurance (
     id int(11) NOT NULL,
-    type varchar(255),
     name varchar(255),
     CONSTRAINT insurance_pk PRIMARY KEY (id)
     );
 LOAD DATA LOCAL INFILE 'C:/Users/lzeng/Documents/GitHub/hospital-app/Data/insurance_table.csv' INTO TABLE insurance FIELDS TERMINATED BY ',' IGNORE 1 LINES;
 
-INSERT INTO insurance (id, type, name) VALUES (0, NULL, 'Uninsured');
+INSERT INTO insurance (id, name) VALUES (0, 'Uninsured');
 
 DROP TABLE IF EXISTS patients;
 CREATE TABLE patients (
@@ -22,9 +21,10 @@ CREATE TABLE patients (
     gender char(1),
     phone_number varchar(15),
     street varchar(255),
+    city varchar(255),
     state char(2),
     zip varchar(9),
-    insurance_id int(255) NOT NULL,
+    insurance_id int(3) NOT NULL,
     CONSTRAINT patients_pk PRIMARY KEY (id),
     FOREIGN KEY (insurance_id) REFERENCES insurance(id)
                       ON UPDATE CASCADE
@@ -37,7 +37,6 @@ CREATE TABLE hospitals (
     id int(11) NOT NULL AUTO_INCREMENT,
     name varchar(255),
     type varchar(50),
-    speciality varchar(255),
     street varchar(255),
     city varchar(255),
     state char(2),
@@ -55,7 +54,7 @@ CREATE TABLE physicians (
     last_name varchar(255),
     first_name varchar(255),
     email varchar(255),
-    department varchar(255),
+    specialty varchar(255),
     CONSTRAINT physicians_pk PRIMARY KEY (id),
     FOREIGN KEY (hospital_id) REFERENCES hospitals(id)
                       ON UPDATE CASCADE
@@ -68,7 +67,6 @@ CREATE TABLE nurses (
     hospital_id int(11) NOT NULL,
     last_name varchar(255),
     first_name varchar(255),
-    department varchar(255),
     CONSTRAINT nurses_pk PRIMARY KEY (id),
     FOREIGN KEY (hospital_id) REFERENCES hospitals(id)
                       ON UPDATE CASCADE
@@ -77,16 +75,19 @@ LOAD DATA LOCAL INFILE 'C:/Users/lzeng/Documents/GitHub/hospital-app/Data/nurse_
 
 DROP TABLE IF EXISTS drugs;
 CREATE TABLE drugs (
-    id int(11) NOT NULL AUTO_INCREMENT,
+    id int(11) NOT NULL,
     name varchar(255),
     CONSTRAINT drugs_pk PRIMARY KEY (id)
     );
 LOAD DATA LOCAL INFILE 'C:/Users/lzeng/Documents/GitHub/hospital-app/Data/drugs_table.csv' INTO TABLE drugs FIELDS TERMINATED BY ',' IGNORE 1 LINES;
 
+INSERT INTO drugs (id, name) VALUES (0, NULL);
+
 DROP TABLE IF EXISTS diseases;
 CREATE TABLE diseases (
     id int(11) NOT NULL,
     name varchar(255),
+    symptoms varchar(255),
     CONSTRAINT disease_pk PRIMARY KEY (id)
     );
 LOAD DATA LOCAL INFILE 'C:/Users/lzeng/Documents/GitHub/hospital-app/Data/disease_table.csv' INTO TABLE diseases FIELDS TERMINATED BY ',' IGNORE 1 LINES;
@@ -105,12 +106,17 @@ CREATE TABLE disease_drug (
     );
 LOAD DATA LOCAL INFILE 'C:/Users/lzeng/Documents/GitHub/hospital-app/Data/disease_drug_table.csv' INTO TABLE disease_drug FIELDS TERMINATED BY ',' IGNORE 1 LINES;
 
+
+
 DROP TABLE IF EXISTS treatment;
 CREATE TABLE treatment (
     id int(11) NOT NULL,
     activity varchar(255),
+    drug_id int(11) ,
+    quantity int(11),
     description varchar(255),
-    CONSTRAINT treatment_pk PRIMARY KEY (id)
+    CONSTRAINT treatment_pk PRIMARY KEY (id, drug_id),
+        FOREIGN KEY (drug_id) REFERENCES drugs(id)
     );
 LOAD DATA LOCAL INFILE 'C:/Users/lzeng/Documents/GitHub/hospital-app/Data/treatment_table.csv' INTO TABLE treatment FIELDS TERMINATED BY ',' IGNORE 1 LINES;
 
@@ -123,8 +129,6 @@ CREATE TABLE visits (
     nurse_id int(11) NOT NULL,
     hospital_id int(11) NOT NULL,
     disease_id int(11) NOT NULL,
-    treatment_id int(11) NOT NULL,
-    procedure_id int(1),
     CONSTRAINT visits_pk PRIMARY KEY (id),
     FOREIGN KEY (patient_id) REFERENCES patients(id)
                       ON UPDATE CASCADE,
@@ -135,11 +139,22 @@ CREATE TABLE visits (
     FOREIGN KEY (hospital_id) REFERENCES hospitals(id)
                       ON UPDATE CASCADE,
     FOREIGN KEY (disease_id) REFERENCES diseases(id)
-                      ON UPDATE CASCADE,
-    FOREIGN KEY (treatment_id) REFERENCES treatment(id)
                       ON UPDATE CASCADE
     );
 LOAD DATA LOCAL INFILE 'C:/Users/lzeng/Documents/GitHub/hospital-app/Data/visit_table.csv' INTO TABLE visits FIELDS TERMINATED BY ',' IGNORE 1 LINES;
+
+DROP TABLE IF EXISTS visit_treatment;
+CREATE TABLE visit_treatment (
+    visit_id int(11) NOT NULL,
+    treatment_id int(11) NOT NULL,
+    CONSTRAINT
+       FOREIGN KEY (visit_id) REFERENCES visits(id),
+       FOREIGN KEY (treatment_id) REFERENCES  treatment(id)
+                          ON UPDATE CASCADE
+
+    );
+LOAD DATA LOCAL INFILE 'C:/Users/lzeng/Documents/GitHub/hospital-app/Data/visit_treatment_table.csv' INTO TABLE visit_treatment FIELDS TERMINATED BY ',' IGNORE 1 LINES;
+
 
 DROP TABLE IF EXISTS insurance_hospital;
 CREATE TABLE insurance_hospital (
@@ -154,7 +169,30 @@ CREATE TABLE insurance_hospital (
 LOAD DATA LOCAL INFILE 'C:/Users/lzeng/Documents/GitHub/hospital-app/Data/insurance_hospital_table.csv' INTO TABLE insurance_hospital FIELDS TERMINATED BY ',' IGNORE 1 LINES;
 
 
-SELECT first_name, last_name, disease_id, d.name
-    FROM visits JOIN patients p on visits.patient_id = p.id
-        JOIN diseases d on visits.disease_id = d.id
-     WHERE p.id = 1 AND visits.treatment_id = 6;
+SELECT p.first_name, p.last_name, p2.last_name, p2.first_name,  h.name, date, treatment_id, t.activity, d.name, t.quantity FROM patients p JOIN visits v on p.id = v.patient_id
+                                    JOIN hospitals h on v.hospital_id = h.id
+                                    JOIN physicians p2 on v.doctor_id = p2.id
+                                    JOIN visit_treatment vt on v.id = vt.visit_id JOIN treatment t on vt.treatment_id = t.id
+                                    JOIN drugs d on t.drug_id = d.id
+ WHERE p.id = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

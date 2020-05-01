@@ -1,245 +1,245 @@
-id,name
-1,Left Ventricular Dysfunction
-2,ADHD
-3,Opiate Dependence
-4,Benign Prostatic Hyperplasia
-5,Emergency Contraception
-6,Bipolar Disorde
-7,Epilepsy
-8,Migraine Prevention
-9,Depression
-10,Crohn's Disease
-11,Cough
-12,Obesity
-13,Urinary Tract Infection
-14,ibromyalgia
-15,Chronic Myelogenous Leukemia
-16,HIV Infection
-17,Insomnia
-18,Rheumatoid Arthritis
-19,Vaginal Yeast Infection
-20,Chlamydia Infection
-21,Hirsutism
-22,Panic Disorde
-23,Migraine
-24,Pain
-25,Irritable Bowel Syndrome
-26,Osteoarthritis
-27,Constipation
-28,Bowel Preparation
-29,Psychosis
-30,Muscle Spasm
-31,Hepatitis C
-32,Overactive Bladde
-33,Diabetes  Type 2
-34,Asthma  Maintenance
-35,Non-Small Cell Lung Cance
-36,Schizophrenia
-37,Dysuria
-38,Smoking Cessation
-39,Anxiety
-40,Acne
-41,emale Infertility
-42,Constipation  Acute
-43,Constipation  Drug Induced
-44,Erectile Dysfunction
-45,Trigeminal Neuralgia
-46,Underactive Thyroid
-47,Chronic Pain
-48,Atrophic Vaginitis
-49,Skin and Structure Infection
-50,Tinnitus
-51,Major Depressive Disorde
-52,Anxiety and Stress
-53,Rosacea
-54,High Blood Pressure
-55,Restless Legs Syndrome
-56,Osteolytic Bone Metastases of Solid Tumors
-57,Bronchitis
-58,Skin or Soft Tissue Infection
-59,Obsessive Compulsive Disorde
-60,Endometriosis
-61,Keratoconjunctivitis Sicca
-62,Breakthrough Pain
-63,Seizures
-64,Neuropathic Pain
-65,Sedation
-66,Menstrual Disorders
-67,Allergic Rhinitis
-68,Anesthesia
-69,Undifferentiated Connective Tissue Disease
-70,Diabetes  Type 1
-71,Abnormal Uterine Bleeding
-72,Weight Loss
-73,Constipation  Chronic
-74,Breast Cancer  Metastatic
-75,Period Pain
-76,Helicobacter Pylori Infection
-77,Atrial Fibrillation
-78,Uterine Fibroids
-79,Kidney Infections
-80,Generalized Anxiety Disorde
-81,Asthma
-82,Postmenopausal Symptoms
-83,High Cholesterol
-84,Hypogonadism  Male
-85,Hyperthyroidism
-86,Back Pain
-87,Anaplastic Oligodendroglioma
-88,Sjogren's Syndrome
-89,Asthma  acute
-90,Hot Flashes
-91,Herpes Simplex  Suppression
-92,Bacterial Infection
-93,Bursitis
-94,Diaper Rash
-95,Systemic Mastocytosis
-96,Trichotillomania
-97,Hashimoto's disease
-98,Eczema
-99,Dental Abscess
-100,Headache
-101,Hypersomnia
-102,Xerostomia
-103,Breast Cance
-104,Sore Throat
-105,Barrett's Esophagus
-106,Pain/Feve
-107,Diverticulitis
-108,Sinusitis
-109,Polycystic Ovary Syndrome
-110,Influenza
-111,Hypothyroidism  After Thyroid Removal
-112,Onychomycosis  Toenail
-113,Progesterone Insufficiency
-114,GERD
-115,Nausea/Vomiting  Postoperative
-116,Herpes Simplex
-117,Gastroparesis
-118,Gout  Acute
-119,Motion Sickness
-120,Multiple Sclerosis
-121,Autism
-122,Otitis Media
-123,Upper Respiratory Tract Infection
-124,Surgical Prophylaxis
-125,Psoriatic Arthritis
-126,Erosive Esophagitis
-127,Premature Ventricular Depolarizations
-128,Stomach Ulce
-129,Nausea/Vomiting
-130,Light Anesthesia
-131,Angina Pectoris Prophylaxis
-132,Paranoid Disorde
-133,Prostatitis
-134,Extrapyramidal Reaction
-135,mance Anxiety
-136,Night Terrors
-137,High Cholesterol  Familial Heterozygous
-138,Spondyloarthritis
-139,Clostridial Infection
-140,Dermatomyositis
-141,Bronchiectasis
-142,Nasal Congestion
-143,Benign Essential Trem
-144,Angina
-145,moterol / mometasone)
-146,Impetig
-147,Conjunctivitis  Bacterial
-148,Post Traumatic Stress Disorde
-149,Alcohol Withdrawal
-150,Psoriasis
-151,Cold Sores
-152,Hyperhidrosis
-153,Ankylosing Spondylitis
-154,Hemorrhoids
-155,Schizoaffective Disorde
-156,Not Listed / Othe
-157,Rhinitis
-158,Oral Thrush
-159,Hyperlipoproteinemia
-160,Neutropenia Associated with Chemotherapy
-161,Osteoporosis
-162,Reflex Sympathetic Dystrophy Syndrome
-163,Urticaria
-164,Narcolepsy
-165,Systemic Lupus Erythematosus
-166,Ulcerative Colitis
-167,Adult Human Growth Hormone Deficiency
-168,Bacterial Vaginitis
-169,COPD  Maintenance
-170,Anorexia
-171,TSH Suppression
-172,Breast Cancer  Adjuvant
-173,Glaucoma
-174,Cough and Nasal Congestion
-175,Inflammatory Conditions
-176,Urinary Incontinence
-177,Gout
-178,Bladder Infection
-179,Human Papillomavirus Prophylaxis
-180,Glioblastoma Multiforme
-181,Strep Throat
-182,Bacterial Skin Infection
-183,Hereditary Angioedema
-184,Cold Symptoms
-185,Labor Pain
-186,Dry Skin
-187,Diabetes Insipidus
-188,Methicillin-Resistant Staphylococcus Aureus Infection
-189,Borderline Personality Disorde
-190,Amenorrhea
-191,Pneumonia
-192,Seborrheic Dermatitis
-193,Interstitial Cystitis
-194,Malaria Prevention
-195,Prevention of Dental Caries
-196,Herbal Supplementation
-197,Plaque Psoriasis
-198,Raynaud's Syndrome
-199,Addison's Disease
-200,Prostate Cance
-201,Allergies
-202,Opioid-Induced Constipation
-203,moterol)
-204,Diarrhea
-205,Seasonal Allergic Conjunctivitis
-206,Opioid Overdose
-207,Spondylolisthesis
-208,Shift Work Sleep Disorde
-209,Obstructive Sleep Apnea/Hypopnea Syndrome
-210,Nausea/Vomiting of Pregnancy
-211,Mucositis
-212,Ulcerative Colitis  Active
-213,Head Lice
-214,Tonsillitis/Pharyngitis
-215,Pseudotumor Cerebri
-216,Parkinson's Disease
-217,Sciatica
-218,Cance
-219,Bacterial Endocarditis Prevention
-220,Diarrhea  Chronic
-221,Hypertensive Emergency
-222,Keratosis
-223,Ovarian Cysts
-224,Behcet's Disease
-225,Chronic Idiopathic Constipation
-226,lic Acid Deficiency
-227,Chronic Fatigue Syndrome
-228,Basal Cell Carcinoma
-229,Cataplexy
-230,Crohn's Disease  Maintenance
-231,Diabetic Peripheral Neuropathy
-232,Arrhythmia
-233,Primary Ovarian Failure
-234,Influenza Prophylaxis
-235,Agitated State
-236,Heart Failure
-237,atigue
-238,Opiate Withdrawal
-239,Endometrial Hyperplasia  Prophylaxis
-240,Immunosuppression
-241,Dystonia
-242,Alopecia
-243,Vulvodynia
-244,Premenstrual Dysphoric Disorde
+id,name,symptoms
+1,Left Ventricular Dysfunction,symptom desciption
+2,ADHD,symptom desciption
+3,Opiate Dependence,symptom desciption
+4,Benign Prostatic Hyperplasia,symptom desciption
+5,Emergency Contraception,symptom desciption
+6,Bipolar Disorde,symptom desciption
+7,Epilepsy,symptom desciption
+8,Migraine Prevention,symptom desciption
+9,Depression,symptom desciption
+10,Crohn's Disease,symptom desciption
+11,Cough,symptom desciption
+12,Obesity,symptom desciption
+13,Urinary Tract Infection,symptom desciption
+14,ibromyalgia,symptom desciption
+15,Chronic Myelogenous Leukemia,symptom desciption
+16,HIV Infection,symptom desciption
+17,Insomnia,symptom desciption
+18,Rheumatoid Arthritis,symptom desciption
+19,Vaginal Yeast Infection,symptom desciption
+20,Chlamydia Infection,symptom desciption
+21,Hirsutism,symptom desciption
+22,Panic Disorde,symptom desciption
+23,Migraine,symptom desciption
+24,Pain,symptom desciption
+25,Irritable Bowel Syndrome,symptom desciption
+26,Osteoarthritis,symptom desciption
+27,Constipation,symptom desciption
+28,Bowel Preparation,symptom desciption
+29,Psychosis,symptom desciption
+30,Muscle Spasm,symptom desciption
+31,Hepatitis C,symptom desciption
+32,Overactive Bladde,symptom desciption
+33,Diabetes  Type 2,symptom desciption
+34,Asthma  Maintenance,symptom desciption
+35,Non-Small Cell Lung Cance,symptom desciption
+36,Schizophrenia,symptom desciption
+37,Dysuria,symptom desciption
+38,Smoking Cessation,symptom desciption
+39,Anxiety,symptom desciption
+40,Acne,symptom desciption
+41,emale Infertility,symptom desciption
+42,Constipation  Acute,symptom desciption
+43,Constipation  Drug Induced,symptom desciption
+44,Erectile Dysfunction,symptom desciption
+45,Trigeminal Neuralgia,symptom desciption
+46,Underactive Thyroid,symptom desciption
+47,Chronic Pain,symptom desciption
+48,Atrophic Vaginitis,symptom desciption
+49,Skin and Structure Infection,symptom desciption
+50,Tinnitus,symptom desciption
+51,Major Depressive Disorde,symptom desciption
+52,Anxiety and Stress,symptom desciption
+53,Rosacea,symptom desciption
+54,High Blood Pressure,symptom desciption
+55,Restless Legs Syndrome,symptom desciption
+56,Osteolytic Bone Metastases of Solid Tumors,symptom desciption
+57,Bronchitis,symptom desciption
+58,Skin or Soft Tissue Infection,symptom desciption
+59,Obsessive Compulsive Disorde,symptom desciption
+60,Endometriosis,symptom desciption
+61,Keratoconjunctivitis Sicca,symptom desciption
+62,Breakthrough Pain,symptom desciption
+63,Seizures,symptom desciption
+64,Neuropathic Pain,symptom desciption
+65,Sedation,symptom desciption
+66,Menstrual Disorders,symptom desciption
+67,Allergic Rhinitis,symptom desciption
+68,Anesthesia,symptom desciption
+69,Undifferentiated Connective Tissue Disease,symptom desciption
+70,Diabetes  Type 1,symptom desciption
+71,Abnormal Uterine Bleeding,symptom desciption
+72,Weight Loss,symptom desciption
+73,Constipation  Chronic,symptom desciption
+74,Breast Cancer  Metastatic,symptom desciption
+75,Period Pain,symptom desciption
+76,Helicobacter Pylori Infection,symptom desciption
+77,Atrial Fibrillation,symptom desciption
+78,Uterine Fibroids,symptom desciption
+79,Kidney Infections,symptom desciption
+80,Generalized Anxiety Disorde,symptom desciption
+81,Asthma,symptom desciption
+82,Postmenopausal Symptoms,symptom desciption
+83,High Cholesterol,symptom desciption
+84,Hypogonadism  Male,symptom desciption
+85,Hyperthyroidism,symptom desciption
+86,Back Pain,symptom desciption
+87,Anaplastic Oligodendroglioma,symptom desciption
+88,Sjogren's Syndrome,symptom desciption
+89,Asthma  acute,symptom desciption
+90,Hot Flashes,symptom desciption
+91,Herpes Simplex  Suppression,symptom desciption
+92,Bacterial Infection,symptom desciption
+93,Bursitis,symptom desciption
+94,Diaper Rash,symptom desciption
+95,Systemic Mastocytosis,symptom desciption
+96,Trichotillomania,symptom desciption
+97,Hashimoto's disease,symptom desciption
+98,Eczema,symptom desciption
+99,Dental Abscess,symptom desciption
+100,Headache,symptom desciption
+101,Hypersomnia,symptom desciption
+102,Xerostomia,symptom desciption
+103,Breast Cance,symptom desciption
+104,Sore Throat,symptom desciption
+105,Barrett's Esophagus,symptom desciption
+106,Pain/Feve,symptom desciption
+107,Diverticulitis,symptom desciption
+108,Sinusitis,symptom desciption
+109,Polycystic Ovary Syndrome,symptom desciption
+110,Influenza,symptom desciption
+111,Hypothyroidism  After Thyroid Removal,symptom desciption
+112,Onychomycosis  Toenail,symptom desciption
+113,Progesterone Insufficiency,symptom desciption
+114,GERD,symptom desciption
+115,Nausea/Vomiting  Postoperative,symptom desciption
+116,Herpes Simplex,symptom desciption
+117,Gastroparesis,symptom desciption
+118,Gout  Acute,symptom desciption
+119,Motion Sickness,symptom desciption
+120,Multiple Sclerosis,symptom desciption
+121,Autism,symptom desciption
+122,Otitis Media,symptom desciption
+123,Upper Respiratory Tract Infection,symptom desciption
+124,Surgical Prophylaxis,symptom desciption
+125,Psoriatic Arthritis,symptom desciption
+126,Erosive Esophagitis,symptom desciption
+127,Premature Ventricular Depolarizations,symptom desciption
+128,Stomach Ulce,symptom desciption
+129,Nausea/Vomiting,symptom desciption
+130,Light Anesthesia,symptom desciption
+131,Angina Pectoris Prophylaxis,symptom desciption
+132,Paranoid Disorde,symptom desciption
+133,Prostatitis,symptom desciption
+134,Extrapyramidal Reaction,symptom desciption
+135,mance Anxiety,symptom desciption
+136,Night Terrors,symptom desciption
+137,High Cholesterol  Familial Heterozygous,symptom desciption
+138,Spondyloarthritis,symptom desciption
+139,Clostridial Infection,symptom desciption
+140,Dermatomyositis,symptom desciption
+141,Bronchiectasis,symptom desciption
+142,Nasal Congestion,symptom desciption
+143,Benign Essential Trem,symptom desciption
+144,Angina,symptom desciption
+145,moterol / mometasone),symptom desciption
+146,Impetig,symptom desciption
+147,Conjunctivitis  Bacterial,symptom desciption
+148,Post Traumatic Stress Disorde,symptom desciption
+149,Alcohol Withdrawal,symptom desciption
+150,Psoriasis,symptom desciption
+151,Cold Sores,symptom desciption
+152,Hyperhidrosis,symptom desciption
+153,Ankylosing Spondylitis,symptom desciption
+154,Hemorrhoids,symptom desciption
+155,Schizoaffective Disorde,symptom desciption
+156,Not Listed / Othe,symptom desciption
+157,Rhinitis,symptom desciption
+158,Oral Thrush,symptom desciption
+159,Hyperlipoproteinemia,symptom desciption
+160,Neutropenia Associated with Chemotherapy,symptom desciption
+161,Osteoporosis,symptom desciption
+162,Reflex Sympathetic Dystrophy Syndrome,symptom desciption
+163,Urticaria,symptom desciption
+164,Narcolepsy,symptom desciption
+165,Systemic Lupus Erythematosus,symptom desciption
+166,Ulcerative Colitis,symptom desciption
+167,Adult Human Growth Hormone Deficiency,symptom desciption
+168,Bacterial Vaginitis,symptom desciption
+169,COPD  Maintenance,symptom desciption
+170,Anorexia,symptom desciption
+171,TSH Suppression,symptom desciption
+172,Breast Cancer  Adjuvant,symptom desciption
+173,Glaucoma,symptom desciption
+174,Cough and Nasal Congestion,symptom desciption
+175,Inflammatory Conditions,symptom desciption
+176,Urinary Incontinence,symptom desciption
+177,Gout,symptom desciption
+178,Bladder Infection,symptom desciption
+179,Human Papillomavirus Prophylaxis,symptom desciption
+180,Glioblastoma Multiforme,symptom desciption
+181,Strep Throat,symptom desciption
+182,Bacterial Skin Infection,symptom desciption
+183,Hereditary Angioedema,symptom desciption
+184,Cold Symptoms,symptom desciption
+185,Labor Pain,symptom desciption
+186,Dry Skin,symptom desciption
+187,Diabetes Insipidus,symptom desciption
+188,Methicillin-Resistant Staphylococcus Aureus Infection,symptom desciption
+189,Borderline Personality Disorde,symptom desciption
+190,Amenorrhea,symptom desciption
+191,Pneumonia,symptom desciption
+192,Seborrheic Dermatitis,symptom desciption
+193,Interstitial Cystitis,symptom desciption
+194,Malaria Prevention,symptom desciption
+195,Prevention of Dental Caries,symptom desciption
+196,Herbal Supplementation,symptom desciption
+197,Plaque Psoriasis,symptom desciption
+198,Raynaud's Syndrome,symptom desciption
+199,Addison's Disease,symptom desciption
+200,Prostate Cance,symptom desciption
+201,Allergies,symptom desciption
+202,Opioid-Induced Constipation,symptom desciption
+203,moterol),symptom desciption
+204,Diarrhea,symptom desciption
+205,Seasonal Allergic Conjunctivitis,symptom desciption
+206,Opioid Overdose,symptom desciption
+207,Spondylolisthesis,symptom desciption
+208,Shift Work Sleep Disorde,symptom desciption
+209,Obstructive Sleep Apnea/Hypopnea Syndrome,symptom desciption
+210,Nausea/Vomiting of Pregnancy,symptom desciption
+211,Mucositis,symptom desciption
+212,Ulcerative Colitis  Active,symptom desciption
+213,Head Lice,symptom desciption
+214,Tonsillitis/Pharyngitis,symptom desciption
+215,Pseudotumor Cerebri,symptom desciption
+216,Parkinson's Disease,symptom desciption
+217,Sciatica,symptom desciption
+218,Cance,symptom desciption
+219,Bacterial Endocarditis Prevention,symptom desciption
+220,Diarrhea  Chronic,symptom desciption
+221,Hypertensive Emergency,symptom desciption
+222,Keratosis,symptom desciption
+223,Ovarian Cysts,symptom desciption
+224,Behcet's Disease,symptom desciption
+225,Chronic Idiopathic Constipation,symptom desciption
+226,lic Acid Deficiency,symptom desciption
+227,Chronic Fatigue Syndrome,symptom desciption
+228,Basal Cell Carcinoma,symptom desciption
+229,Cataplexy,symptom desciption
+230,Crohn's Disease  Maintenance,symptom desciption
+231,Diabetic Peripheral Neuropathy,symptom desciption
+232,Arrhythmia,symptom desciption
+233,Primary Ovarian Failure,symptom desciption
+234,Influenza Prophylaxis,symptom desciption
+235,Agitated State,symptom desciption
+236,Heart Failure,symptom desciption
+237,atigue,symptom desciption
+238,Opiate Withdrawal,symptom desciption
+239,Endometrial Hyperplasia  Prophylaxis,symptom desciption
+240,Immunosuppression,symptom desciption
+241,Dystonia,symptom desciption
+242,Alopecia,symptom desciption
+243,Vulvodynia,symptom desciption
+244,Premenstrual Dysphoric Disorde,symptom desciption
