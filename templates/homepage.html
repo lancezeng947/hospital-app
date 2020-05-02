@@ -36,12 +36,12 @@
 
     <div class="container">
       <div class="jumbotron1">
-    <h1 class="display-4">Welcome to our hosipital app!</h1>
-    <p class="lead">This is a simple app to handle the hosipital data.</p>
+    <h1 class="display-4">Welcome to our hospital app!</h1>
+    <p class="lead">This is a simple app to handle the hospital data.</p>
     <hr class="my-4">
     <p>Please select your role.</p>
-    <a class="btn btn-primary btn-lg" href="patiencepage.html" role="button">I'm a patient</a>
-    <a class="btn btn-primary btn-lg" href="doctorpage.html" role="button">I'm a doctor</a>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('patient_page') }}" role="button">I'm a patient</a> <!--url_for takes the Flask Function name-->
+    <a class="btn btn-primary btn-lg" href="{{ url_for('doctor_page') }}" role="button">I'm a doctor</a>
 
   </div>
     </div>

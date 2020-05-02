@@ -7,7 +7,7 @@
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand" href="homepage.html">Hospital Data Webapp</a>
+<a class="navbar-brand" href="{{ url_for('home') }}">Hospital Data Webapp</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -40,16 +40,16 @@
 
 <br>
 <div class="container">
-    <form>
+<form id = "login-form" method="POST" action = "/pin.html">
 <div class="form-group">
   <label for="exampleInputEmail1">Name</label>
-  <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  <input name="username" type="name" class="form-control" value="{{ request.form.username }}" id="exampleInputEmail1" aria-describedby="emailHelp">
 </div>
 <div class="form-group">
-  <label for="exampleInputPassword1">Phone Number</label>
-  <input type="Phone" class="form-control" id="exampleInputPassword1">
+    <label for="exampleInputPassword1">Phone Number</label>
+    <input name="phone_num" type="Phone" class="form-control" value="{{ request.form.phone_num }}" id="exampleInputPassword1">
 </div>
-  <a class="btn btn-primary btn-lg" href="pin.html" role="button">Sign me in!</a>
+  <input class="btn btn-primary btn-lg" role="button" type='submit', value="Sign me up!"></a>
 </form>
   </div>
 
