@@ -67,7 +67,6 @@ def pin():
   print(result)
   print(user_name)
   print(phone_number)
-<<<<<<< HEAD
   # print(result[0][0])
   # print(result[0][0] == '')
 
@@ -80,14 +79,12 @@ def pin():
     return render_template("patiencepage.html")
   else:
     return render_template("pin0.html")
-=======
   print(result[0][0])
   print(result[0][0] == '')
   if result[0][0] == ' ':
     return render_template("patiencepage.html")
   else:
     return render_template("pin.html")
->>>>>>> c0e4c19067c456e8304a4125ce44f315d53f09d3
 
 
 @app.route("/pprofile.html")
