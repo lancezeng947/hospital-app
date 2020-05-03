@@ -61,8 +61,29 @@
       <br>
       <h4>My Medicine</h4>
       <br>
-      <h5>FInd a way to display all medicines</h5>
+      <table>
+        <tr>
+          <th>  Date of Visit  </th>
+          <th>  Hospital Prescibed  </th>
+          <th>  Doctor Prescribed  </th>
+          <th>  Drug Name  </th>
+          <th>  Quantities  </th>
+          <th>  Conditions  </th>
+        </tr>
+          {% for record in records%}
+          <tr>
+            <td>{{record[0]}}</td>
+            <td>{{record[1]}}</td>
+            <td>{{record[2]}}</td>
+            <td>{{record[3]}}</td>
+            <td>{{record[4]}}</td>
+            <td>{{record[5]}}</td>
+          </tr>
+          {% endfor %}
 
+      </table>
+
+      <br>
       <br>
       <a class="btn btn-primary btn-lg" href="javascript:history.back()" role="button">Back</a>
       <a class="btn btn-primary btn-lg" href="homepage.html" role="button">Log Out</a>

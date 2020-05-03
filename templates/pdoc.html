@@ -61,8 +61,28 @@
       <br>
       <h4>My Doctors</h4>
       <br>
-      <h5>Find a way to display doctors</h5>
+      <table>
+        <tr>
+          <th>  Doctor Name  </th>
+          <th>  Hospital  </th>
+          <th>  Address  </th>
+          <th>  Specialty  </th>
+        </tr>
+          {% for record in records%}
+          <tr>
+            <td>{{record[0]}}</td>
+            <td>{{record[1]}}</td>
+            <td>{{record[2]}}</td>
+            <td>{{record[3]}}</td>
+          </tr>
+          {% endfor %}
+
+      </table>
+
       <br>
+      <br>
+
+
       <a class="btn btn-primary btn-lg" href="javascript:history.back()" role="button">Back</a>
       <a class="btn btn-primary btn-lg" href="homepage.html" role="button">Log Out</a>
     </div>

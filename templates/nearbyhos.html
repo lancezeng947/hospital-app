@@ -61,7 +61,24 @@
   <br>
   <h5>Hospitals Near Me</h5>
     <br>
-    <p>Display nearby hospitals</p>
+    <br>
+    <table>
+      <tr>
+        <th> Hospital Name </th>
+        <th> Address </th>
+        <th> Phone </th>
+        <th>  Specialities  </th>
+      </tr>
+        {% for record in records%}
+        <tr>
+          <td>{{record[0]}}</td>
+          <td>{{record[1]}}</td>
+          <td>{{record[2]}}</td>
+          <td>{{record[3]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
       <br>
     <a class="btn btn-primary btn-lg" href="javascript:history.back()" role="button">Back</a>
     <a class="btn btn-primary btn-lg" href="homepage.html" role="button">Log Out</a>

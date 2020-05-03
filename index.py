@@ -104,7 +104,7 @@ def pin():
 
 @app.route("/pin0.html")
 def pin0():
-  return render_template("pin0.html") 
+  return render_template("pin0.html")
 
 @app.route("/pprofile.html")
 def pprofile():
@@ -154,6 +154,14 @@ def docrecommend():
 @app.route("/support.html")
 def support():
   return render_template("support.html")
+
+@app.route("/privacy.html")
+def privacy():
+  return render_template("privacy.html")
+
+@app.route("/userguidelines.html")
+def user():
+  return render_template("userguidelines.html")
 
 
 

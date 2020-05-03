@@ -61,7 +61,21 @@
       <br>
       <h4>My Insurance</h4>
       <br>
-<h5>Display Insurance</h5>
+      <table>
+        <tr>
+          <th>  Insurance ID  </th>
+          <th>  Insurance Name  </th>
+          <th>  Insurance Type  </th>
+        </tr>
+          {% for record in records%}
+          <tr>
+            <td>{{record[0]}}</td>
+            <td>{{record[1]}}</td>
+            <td>{{record[2]}}</td>
+          </tr>
+          {% endfor %}
+
+      </table>
       <br>
       <a class="btn btn-primary btn-lg" href="javascript:history.back()" role="button">Back</a>
       <a class="btn btn-primary btn-lg" href="homepage.html" role="button">Log Out</a>
