@@ -63,15 +63,13 @@
       <br>
       <table>
         <tr>
-          <th>  ID  </th>
           <th>  Date  </th>
           <th>  Hospital  </th>
           <th>  Doctor  </th>
           <th>  Nurse  </th>
-          <th>  Disease Name  </th>
-          <th>  Disease Symptom  </th>
-          <th>  Drug Used  </th>
-          <th>  Description  </th>
+          <th>  Purpose  </th>
+          <th>  Drug Prescribed  </th>
+          <th>  Doctor's Notes  </th>
         </tr>
           {% for record in records%}
           <tr>
@@ -82,8 +80,6 @@
             <td>{{record[4]}}</td>
             <td>{{record[5]}}</td>
             <td>{{record[6]}}</td>
-            <td>{{record[7]}}</td>
-            <td>{{record[8]}}</td>
           </tr>
           {% endfor %}
 

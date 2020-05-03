@@ -45,7 +45,7 @@
       Tools
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="nearbyhos.html">Hosipitals Near Me</a>
+      <a class="dropdown-item" href="nearbyhos.html">Hospitals Near Me</a>
       <a class="dropdown-item" href="docrecommend.html">Doctors Recommended for Me</a>
       <a class="dropdown-item" href="support.html">My Support Group</a>
   </li>
@@ -65,13 +65,11 @@
         <tr>
           <th>  Insurance ID  </th>
           <th>  Insurance Name  </th>
-          <th>  Insurance Type  </th>
         </tr>
           {% for record in records%}
           <tr>
             <td>{{record[0]}}</td>
             <td>{{record[1]}}</td>
-            <td>{{record[2]}}</td>
           </tr>
           {% endfor %}
 
