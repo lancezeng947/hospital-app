@@ -169,6 +169,9 @@ CREATE TABLE insurance_hospital (
 LOAD DATA LOCAL INFILE 'C:/Users/lzeng/Documents/GitHub/hospital-app/Data/insurance_hospital_table.csv' INTO TABLE insurance_hospital FIELDS TERMINATED BY ',' IGNORE 1 LINES;
 
 
+SELECT * FROM patients WHERE id = 501;
+
+
 SELECT p.first_name, p.last_name, p2.last_name, p2.first_name,  h.name, date, treatment_id, t.activity, d.name, t.quantity FROM patients p JOIN visits v on p.id = v.patient_id
                                     JOIN hospitals h on v.hospital_id = h.id
                                     JOIN physicians p2 on v.doctor_id = p2.id
@@ -176,10 +179,7 @@ SELECT p.first_name, p.last_name, p2.last_name, p2.first_name,  h.name, date, tr
                                     JOIN drugs d on t.drug_id = d.id
  WHERE p.id = 1
 
-
-
-
-
+SELECT first_name, last_name, CONCAT(street, ' ', city, ', ', state), zip FROM patients
 
 
 

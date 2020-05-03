@@ -498,5 +498,4 @@ id,first_name,last_name,email,gender,phone_number,street,city,state,zip_code,ins
 497,Tera,Featherstonhaugh,tfeatherstonhaughds@mozilla.com,F,202-951-9118,1972 Warbler Center,Ismailia,NV,89502,10
 498,Tybalt,Baselio,tbaseliodt@omniture.com,M,904-312-6386,058 Scott Road,Tieremu,MO,64601,15
 499,Arte,Rumens,arumensdu@examiner.com,M,702-639-1493,150 1st Crossing,Al Ghayl,WV,26147,20
-500,Forrester,Strangman,fstrangmandv@cnn.com,M,813-816-0711,79781 Transport Hill,Jaquimeyes,84741,5,
-,,,,,,,UT,,,
+500,Forrester,Strangman,fstrangmandv@cnn.com,M,813-816-0711,79781 Transport Hill,Jaquimeyes,UT,84741,5
