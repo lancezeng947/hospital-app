@@ -16,9 +16,6 @@ config = {
     'host': 'localhost',
     'port': 3306,
     'user': 'root',
-    #lance
-    #'password': 'mypass',
-    #heqing
     'password': 'mypass',
     'database': 'hospital'
 }
@@ -130,7 +127,7 @@ def precord():
          h.name AS hospital_name, \
          CONCAT(p2.first_name,' ', p2.last_name) AS doctor_name, \
          CONCAT(n.first_name,' ', n.last_name) AS nurse_name, \
-         t.activity, d2.name AS drug_name,  d.name \
+         t.activity, d.name \
         FROM patients p \
           JOIN visits v on p.id = v.patient_id \
           JOIN hospitals h on v.hospital_id = h.id \
