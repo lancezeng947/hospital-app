@@ -55,6 +55,7 @@ CREATE TABLE physicians (
     first_name varchar(255),
     email varchar(255),
     specialty varchar(255),
+    rating float(11),
     CONSTRAINT physicians_pk PRIMARY KEY (id),
     FOREIGN KEY (hospital_id) REFERENCES hospitals(id)
                       ON UPDATE CASCADE
@@ -186,7 +187,13 @@ SELECT first_name, last_name, CONCAT(street, ' ', city, ', ', state), zip FROM p
 
 
 
-
+SELECT CONCAT(d.first_name, ' ', d.last_name), h.name, d.specialty, d.rating FROM hospitals h JOIN physicians d ON h.id = d.hospital_id WHERE h.id IN (
+               SELECT h.id
+                FROM patients p
+                LEFT JOIN insurance i ON p.insurance_id = i.id
+                LEFT JOIN insurance_hospital ih ON i.id = ih.insurance_id
+                LEFT JOIN hospitals h ON ih.hospital_id=h.id
+                WHERE p.id=1 AND h.state = p.state );
 
 
 

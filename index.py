@@ -150,7 +150,7 @@ def pdoc():
 
   user_id = session.get('user_id')
   result = db.engine.execute("SELECT DISTINCT CONCAT(p.first_name, ' ', p.last_name), h.name, \
-                CONCAT(h.street, ' ', h.city, ', ', h.state, ' ', h.zip), specialty FROM patients JOIN visits v on patients.id = v.patient_id \
+                CONCAT(h.street, ' ', h.city, ', ', h.state, ' ', h.zip), specialty, rating FROM patients JOIN visits v on patients.id = v.patient_id \
                 JOIN hospitals h on v.hospital_id = h.id \
                JOIN physicians p on v.doctor_id = p.id \
                WHERE patients.id = %s", user_id)
@@ -226,7 +226,19 @@ def nearbyhos():
 
 @app.route("/docrecommend.html")
 def docrecommend():
-  return render_template("docrecommend.html")
+
+  user_id = session.get('user_id')  
+
+  result = db.engine.execute("SELECT CONCAT(d.first_name, ' ', d.last_name), h.name, d.specialty, d.rating \
+    FROM hospitals h JOIN physicians d ON h.id = d.hospital_id WHERE h.id IN ( \
+               SELECT h.id \
+                FROM patients p \
+                LEFT JOIN insurance i ON p.insurance_id = i.id \
+                LEFT JOIN insurance_hospital ih ON i.id = ih.insurance_id \
+                LEFT JOIN hospitals h ON ih.hospital_id=h.id \
+                WHERE p.id=%s AND h.state = p.state)", user_id)
+
+  return render_template("docrecommend.html", records = result)
 
 @app.route("/support.html")
 def support():
