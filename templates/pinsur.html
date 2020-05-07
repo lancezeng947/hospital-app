@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Patient Insurance Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='table.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -63,13 +66,13 @@
       <br>
       <table>
         <tr>
-          <th>  Insurance ID  </th>
-          <th>  Insurance Name  </th>
+          <th class="insurance">  Insurance ID  </th>
+          <th class="Insurance">  Insurance Name  </th>
         </tr>
           {% for record in records%}
           <tr>
-            <td>{{record[0]}}</td>
-            <td>{{record[1]}}</td>
+            <td class="insurance">{{record[0]}}</td>
+            <td class="insurance">{{record[1]}}</td>
           </tr>
           {% endfor %}
 

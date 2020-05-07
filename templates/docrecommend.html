@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Patient Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='table.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -70,10 +73,18 @@
           </tr>
             {% for record in records%}
             <tr>
-              <td>{{record[0]}}</td>
+              <td class="sign">{{record[0]}}</td>
               <td>{{record[1]}}</td>
               <td>{{record[2]}}</td>
-              <td>{{record[3]}}</td>
+              {% if record[3] > 7.0 %}
+              <td id="goodr">{{record[3]}}</td>
+              {% endif %}
+              {% if record[3] >= 5.0 and record[3] <= 7.0 %}
+              <td id="midr">{{record[3]}}</td>
+              {% endif %}
+              {% if record[3] < 5.0 %}
+              <td id="badr">{{record[3]}}</td>
+              {% endif %}
             </tr>
             {% endfor %}
 
