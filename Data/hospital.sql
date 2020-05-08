@@ -200,6 +200,44 @@ SELECT CONCAT(d.first_name, ' ', d.last_name), h.name, d.specialty, d.rating FRO
 
 
 
+SELECT v.date,
+         h.name AS hospital_name,
+         CONCAT(p2.first_name,' ', p2.last_name) AS doctor_name,
+         CONCAT(n.first_name,' ', n.last_name) AS nurse_name,
+         t.activity, d.name AS diagnosis
+        FROM patients p
+          JOIN visits v on p.id = v.patient_id
+          JOIN hospitals h on v.hospital_id = h.id
+          JOIN physicians p2 on v.doctor_id = p2.id
+          JOIN nurses n on v.nurse_id = n.id
+          JOIN visit_treatment vt on v.id = vt.visit_id
+          JOIN treatment t on vt.treatment_id = t.id
+          JOIN diseases d on v.disease_id = d.id
+          JOIN drugs d2 on d2.id=t.drug_id
+          WHERE p.id=2
+          ORDER BY 1 DESC;
 
+SELECT h.name AS hospital_name, CONCAT(h.street, ' ', h.city, ', ', h.state, ' ', h.zip) AS address, h.phone_number, h.website
+FROM patients p
+LEFT JOIN insurance i ON p.insurance_id = i.id
+LEFT JOIN insurance_hospital ih ON i.id = ih.insurance_id
+LEFT JOIN hospitals h ON ih.hospital_id=h.id
+WHERE p.id=2 AND h.state = p.state
 
-
+SELECT CONCAT(sub.first_name,' ', sub.last_name) AS name, sub.phone_number, sub.email, sub.name AS disease_name, sub.zip
+    FROM (
+      SELECT p.first_name, p.last_name,p.phone_number, p.email, p.zip,v.disease_id, d.name,SUBSTRING(zip,1,1) AS sub_zip
+      FROM patients p
+      JOIN visits v on p.id = v.patient_id
+      JOIN diseases d on v.disease_id = d.id
+      WHERE v.disease_id IN (
+          SELECT disease_id
+          FROM patients
+          JOIN visits v2 on patients.id = v2.patient_id
+          WHERE patients.id=2 AND disease_id<>0)
+      AND p.id<>2) AS sub
+    JOIN
+      (SELECT SUBSTRING(zip,1,1) AS sub_zip
+      FROM patients p2
+      WHERE p2.id=2 ) sub1
+      ON sub.sub_zip=sub1.sub_zip

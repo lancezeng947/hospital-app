@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Patient Record Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='table.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -74,10 +77,14 @@
           <tr>
             <td>{{record[0]}}</td>
             <td>{{record[1]}}</td>
-            <td>{{record[2]}}</td>
-            <td>{{record[3]}}</td>
+            <td class="sign">{{record[2]}}</td>
+            <td class="sign">{{record[3]}}</td>
             <td>{{record[4]}}</td>
-            <td>{{record[5]}}</td>
+            {% if record[5] != None %}
+            <td class="fontchange">{{record[5]}}</td>
+            {% else %}
+            <td></td>
+            {% endif %}
           </tr>
           {% endfor %}
 

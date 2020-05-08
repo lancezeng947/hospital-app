@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Patient Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='table.css') }}">
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -61,10 +62,7 @@
       <br>
       <h5>My Support Group</h5>
       <br>
-      <p>These people are in the same boat with you, you can try to contact them and set up a support group.</p>
-
-      <br>
-      <br>
+      <p> <i>These people are in the same boat with you, you can try to contact them and set up a support group.</i></p>
       <table>
         <tr>
           <th>  Patient Name  </th>
